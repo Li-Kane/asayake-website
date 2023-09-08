@@ -1,2 +1,2 @@
 ## Asayake Taiko
-Sveltekit, vercel, vite, tailwindcss, 
+Branch from https://github.com/rolemadelen/asayake with minor adjustments for deployment on the ucsd remote server.
