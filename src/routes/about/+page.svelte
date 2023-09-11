@@ -55,42 +55,42 @@
   <section bind:this="{imageElem}" class='images'>
     <div bind:this="{imageSlide}" class="image-slide max-w-full whitespace-nowrap">
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/1.jpg" alt="asa1"/>
+        <img src="/about/temp/1.webp" alt="asa1"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/2.jpg" alt="asa2"/>
+        <img src="/about/temp/2.webp" alt="asa2"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/3.jpg" alt="asa3"/>
+        <img src="/about/temp/3.webp" alt="asa3"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/4.jpg" alt="asa4"/>
+        <img src="/about/temp/4.webp" alt="asa4"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/5.jpg" alt="asa5"/>
+        <img src="/about/temp/5.webp" alt="asa5"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/6.jpg" alt="asa6"/>
+        <img src="/about/temp/6.webp" alt="asa6"/>
       </div>
     </div>
     <div bind:this="{imageSlide}" class="image-slide max-w-full whitespace-nowrap">
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/1.jpg" alt="asa1"/>
+        <img src="/about/temp/1.webp" alt="asa1"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/2.jpg" alt="asa2"/>
+        <img src="/about/temp/2.webp" alt="asa2"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/3.jpg" alt="asa3"/>
+        <img src="/about/temp/3.webp" alt="asa3"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/4.jpg" alt="asa4"/>
+        <img src="/about/temp/4.webp" alt="asa4"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/5.jpg" alt="asa5"/>
+        <img src="/about/temp/5.webp" alt="asa5"/>
       </div>
       <div class="inline-flex justify-center items-center mx-4">
-        <img src="/about/temp/6.jpg" alt="asa6"/>
+        <img src="/about/temp/6.webp" alt="asa6"/>
       </div>
     </div>
   </section>

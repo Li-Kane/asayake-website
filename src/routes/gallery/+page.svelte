@@ -4,7 +4,7 @@
   import Cursor from '../Cursor.svelte';
   import { onMount } from 'svelte';
 
-  const numberOfImages = 34;
+  const numberOfImages = 35;
   const numberOfImages2 = 13;
   const totalImages = numberOfImages + numberOfImages2;
 
@@ -97,14 +97,23 @@
   <div>
     <img src="" alt="enlarged" />
     <button bind:this={closeBtn} tabindex="0" class='close' data-action='close' on:click={handleClick}>
-      <img src="/icons/close.svg" alt="close" />
+      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="34" height="34" rx="9.5" stroke="#EEEEEE"/>
+        <path d="M12.2434 9.1001L9.1001 12.2434L10.7052 13.8485L14.6733 17.8835L10.7052 21.8517L9.1001 23.3899L12.2434 26.6001L13.8485 24.995L17.8835 20.96L21.8517 24.995L23.3899 26.6001L26.6001 23.3899L24.995 21.8517L20.96 17.8835L24.995 13.8485L26.6001 12.2434L23.3899 9.1001L21.8517 10.7052L17.8835 14.6733L13.8485 10.7052L12.2434 9.1001Z" fill="#EEEEEE"/>
+      </svg>
     </button>
     <div class='nav'>
       <button class='left' data-action='left' on:click={handleClick}>
-        <img src="/icons/left.svg" alt="left" />
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="49" height="49" rx="9.5" stroke="#EEEEEE"/>
+          <path d="M29.5455 11L15 25.5L29.5455 40L35 34.5625L25.9091 25.5L35 16.4375L29.5455 11Z" fill="#EEEEEE"/>
+        </svg>
       </button>
       <button class='right' data-action='right' on:click={handleClick}>
-        <img src="/icons/right.svg" alt="right" />
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="49" height="49" rx="9.5" stroke="#EEEEEE"/>
+          <path d="M20.4545 11L35 25.5L20.4545 40L15 34.5625L24.0909 25.5L15 16.4375L20.4545 11Z" fill="#EEEEEE"/>
+        </svg>
       </button>
     </div>
   </div>
@@ -191,8 +200,9 @@
       left: 50%;
       transform: translate(-50% ,-50%);
 
-      img {
+      svg {
         width: 100%;
+        height: 100%;
       }
     }
 

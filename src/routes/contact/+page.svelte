@@ -3,14 +3,14 @@
   import Footer from '../Footer.svelte'
   import Cursor from '../Cursor.svelte'
   import Modal from '../Modal.svelte';
-  import type { ActionData } from './$types.js';
+  //import type { ActionData } from './$types.js';
 
   //Code modal that pops up to confirm email was sent
-  export let form:ActionData;
+  /*export let form:ActionData;
   $: showModal = (form?.success != undefined);
   const handleClose = () => {
     showModal = false;
-  };
+  }; */
 </script>
 
 <svelte:head>
@@ -26,11 +26,11 @@
     </div>
   </div>
 </section>
-<section class='main max-w-screen-2xl'>
-  <div class='left'>
-    <div class='left-section'>
-      <h2>General Inquiries</h2>
-      <p>If you have any questions about our taiko team or need more information, please feel free to get in touch with us.</p>
+<section class='main'>
+  <div class='contact-info'>
+    <div class='section'>
+      <h2>Booking and Inquiries</h2>
+      <p>If you have a performance request or have any questions, please feel free to get in touch with us.</p>
       <div class='links'>
         <a class='links-email' href='mailto:asayaketaiko@gmail.com'>
           <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@
         </a>
       </div>
     </div>
-    <div class='left-section'>
+    <div class='section'>
       <h2>Donate</h2>
       <p>Asayake Taiko is run on equipment and resources primarily sourced through fundraising and donations. We greatly appreciate any and all contributions, no matter the amount, that goes to the bettering of our team's musical and cultural development.</p>
       <div class='links'>
@@ -53,7 +53,7 @@
         </a>
       </div>
     </div>
-    <div class='left-section'>
+    <div class='section'>
       <h2>Connect</h2>
       <p>Be the first to receive updates! Like our Facebook page, follow us on Instagram, and/or subscribe to our YouTube channel.</p>
       <div class='links'>
@@ -78,61 +78,7 @@
       </div>
     </div>
   </div>
-  <div class='right'>
-    <h2>Performance Request</h2>
-    <form id="request-performance" method="POST">
-      <div class='absolute top-0 left-0 z-[-1] opacity-0'>
-        <input type="text" id="honey" name="honey" />
-      </div>
-      <div>
-        <div class='flex flex-col'>
-          <label for="name">Name: * </label>
-          <input type="text" id="name" name="name" placeholder="John Doe" class='mr' required />
-        </div>
-        <div class='flex flex-col'>
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
-        </div>
-      </div>
-      <div>
-        <div class='flex flex-col w-full'>
-          <label for="email">Email: * </label>
-          <input class='!w-full' type="email" id="email" name="email" placeholder="hello@example.com" required />
-        </div>
-      </div>
-      <div>
-        <div class='flex flex-col w-full'>
-          <label for="organization">Name of the Organization / Event: * </label>
-          <input class='!w-full' type="text" name="organization" placeholder="Asayake Taiko" required />
-        </div>
-      </div>
-      <div>
-        <div class='flex flex-col'>
-          <label for="date">Date of Performance: * </label>
-          <input type="text" name="date" placeholder="1st January 2023" class='mr' required />
-        </div>
-        <div class='flex flex-col'>
-          <label for="email">Time of Performance: * </label>
-          <input type="text" name="time" placeholder="12:30 PM" required/>
-        </div>
-      </div>
-      <div class='flex flex-col'>
-        <label for="detail">Performance Description:</label>
-        <textarea name="detail" placeholder="Performance Description (indoor or outdoor, theater stage or grass field, performance location and duration, type of audience, and any additional information we should know!)"></textarea>
-      </div>
-      <button type='submit' class="submit">
-        Send a request 
-        <svg width="42" height="12" viewBox="0 0 42 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 6H41M41 6L36 1M41 6L37 10L36 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>          
-      </button>
-    </form>
-  </div>
 </section>
-<!-- Modal that pops up when form is submitted-->
-{#if showModal}
-  <Modal formResult={form?.success}  on:close={handleClose}/>
-{/if}
 
 <Footer />
 
@@ -168,17 +114,17 @@
       font-size: px2rem(24);
       font-weight: 600;
     }
-    .left {
-      width: 80%;
+    .contact-info {
+      width: 60%;
 
-      &-section {
+      >.section {
         font-size: px2rem(16);
         line-height: 1.5;
 
         .links {
           margin-top: 15px;
           display: flex;
-          // flex-wrap: wrap;
+          flex-wrap: wrap;
           align-items: center;
 
           span {
@@ -353,7 +299,6 @@
 @media screen and (min-width: 900px) {
   .main {
     flex-direction: row;
-    justify-content: space-between;
     margin: 100px px2vw(32);
 
     .links {
