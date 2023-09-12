@@ -13,5 +13,5 @@ The website only needs to install package-lock.json and package.json, which as l
 ## Future Deployments
 The previous website designer for Asayake has a well-explained section on deploying the website here: https://github.com/HirotoKakitani/Asayake-website#deploying-the-website. Additionally, UCSD basic instructions can be found here: https://ucsdservicedesk.service-now.com/its?id=kb_article_view&sysparm_article=KB0030548&sys_kb_id=a7d72b1bdbc67bc09736f35aaf961975. Good luck!
 
-
-Kane Li | MIT License
+## License
+Copyright © 2023, Jii Eu. Released under the MIT License.
