@@ -26,11 +26,11 @@
     </div>
   </div>
 </section>
-<section class='main'>
-  <div class='contact-info'>
-    <div class='section'>
+<section class='main max-w-screen-2xl'>
+  <div class='left'>
+    <div class='left-section'>
       <h2>Booking and Inquiries</h2>
-      <p>If you have a performance request or have any questions, please feel free to get in touch with us.</p>
+      <p>If you have a performance request or have any general inquiries, please feel free to get in touch with us.</p>
       <div class='links'>
         <a class='links-email' href='mailto:asayaketaiko@gmail.com'>
           <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@
         </a>
       </div>
     </div>
-    <div class='section'>
+    <div class='left-section'>
       <h2>Donate</h2>
       <p>Asayake Taiko is run on equipment and resources primarily sourced through fundraising and donations. We greatly appreciate any and all contributions, no matter the amount, that goes to the bettering of our team's musical and cultural development.</p>
       <div class='links'>
@@ -53,7 +53,7 @@
         </a>
       </div>
     </div>
-    <div class='section'>
+    <div class='left-section'>
       <h2>Connect</h2>
       <p>Be the first to receive updates! Like our Facebook page, follow us on Instagram, and/or subscribe to our YouTube channel.</p>
       <div class='links'>
@@ -77,6 +77,38 @@
         </a>
       </div>
     </div>
+  </div>
+  <div class='right'>
+    <h2>Tryouts</h2>
+    <img src="tryouts.jpg" alt="tryouts"/>
+    <p><i>Graphics: @jamiektbk</i></p>
+    <p>Auditions are held every fall quarter over the course of five weeks. <i>No prior experience required!</i> If you are interested, please fill out the interest form linked below.</p>
+    <a class='links-form' target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScIQvWYNV1Up8ABQcgJXOovhZyKd6OWk7Pp56XIM7OYviondw/viewform">
+      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+      <svg fill="#000000" height="25px" width="25px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        viewBox="0 0 492.014 492.014" xml:space="preserve">
+      <g id="XMLID_144_">
+        <path id="XMLID_151_" d="M339.277,459.566H34.922V32.446h304.354v105.873l32.446-32.447V16.223C371.723,7.264,364.458,0,355.5,0
+          H18.699C9.739,0,2.473,7.264,2.473,16.223v459.568c0,8.959,7.265,16.223,16.226,16.223H355.5c8.958,0,16.223-7.264,16.223-16.223
+          V297.268l-32.446,32.447V459.566z"/>
+        <path id="XMLID_150_" d="M291.446,71.359H82.751c-6.843,0-12.396,5.553-12.396,12.398c0,6.844,5.553,12.397,12.396,12.397h208.694
+          c6.845,0,12.397-5.553,12.397-12.397C303.843,76.912,298.29,71.359,291.446,71.359z"/>
+        <path id="XMLID_149_" d="M303.843,149.876c0-6.844-5.553-12.398-12.397-12.398H82.751c-6.843,0-12.396,5.554-12.396,12.398
+          c0,6.845,5.553,12.398,12.396,12.398h208.694C298.29,162.274,303.843,156.722,303.843,149.876z"/>
+        <path id="XMLID_148_" d="M274.004,203.6H82.751c-6.843,0-12.396,5.554-12.396,12.398c0,6.845,5.553,12.397,12.396,12.397h166.457
+          L274.004,203.6z"/>
+        <path id="XMLID_147_" d="M204.655,285.79c1.678-5.618,4.076-11.001,6.997-16.07h-128.9c-6.843,0-12.396,5.553-12.396,12.398
+          c0,6.844,5.553,12.398,12.396,12.398h119.304L204.655,285.79z"/>
+        <path id="XMLID_146_" d="M82.751,335.842c-6.843,0-12.396,5.553-12.396,12.398c0,6.843,5.553,12.397,12.396,12.397h108.9
+          c-3.213-7.796-4.044-16.409-1.775-24.795H82.751z"/>
+        <path id="XMLID_145_" d="M479.403,93.903c-6.496-6.499-15.304-10.146-24.48-10.146c-9.176,0-17.982,3.647-24.471,10.138
+          L247.036,277.316c-5.005,5.003-8.676,11.162-10.703,17.942l-14.616,48.994c-0.622,2.074-0.057,4.318,1.477,5.852
+          c1.122,1.123,2.624,1.727,4.164,1.727c0.558,0,1.13-0.08,1.688-0.249l48.991-14.618c6.782-2.026,12.941-5.699,17.943-10.702
+          l183.422-183.414c6.489-6.49,10.138-15.295,10.138-24.472C489.54,109.197,485.892,100.392,479.403,93.903z"/>
+      </g>
+      </svg>
+      <span>Interest Form</span>
+    </a>
   </div>
 </section>
 
@@ -114,17 +146,16 @@
       font-size: px2rem(24);
       font-weight: 600;
     }
-    .contact-info {
-      width: 60%;
+    .left {
+      width: 100%;
 
-      >.section {
+      &-section {
         font-size: px2rem(16);
         line-height: 1.5;
 
         .links {
           margin-top: 15px;
           display: flex;
-          flex-wrap: wrap;
           align-items: center;
 
           span {
@@ -176,84 +207,44 @@
       border-top: 1px solid #eee;
 
       h2 {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
       }
-    }
-  }
+       img{
+        margin-bottom: 15px;
+       }
 
-  form {
-    .submit {
-      margin-top: 60px;
-      background-color: #791111;
-      width: px2em(250, 16);
-      height: px2em(60, 16);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: px2rem(16);
-      color: #eee;
-      font-weight: 400;
-      border-radius: 5px;
-      box-shadow: 0 0 5px 0 black;
+      .links-form {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+            
+        &:hover {
+          span {
+            color: #000;
+          }
+          svg {
+            transform: scale(1.1);
+          }
+        }
+        span {
+          font-size: px2rem(14);
+          color: #333;
+          padding-left: 5px;
+          transition: color 0.3s ease;
+        }
 
-      svg {
-        width: max(25px, px2vw(40));
-        margin-left: max(20px, px2vw(30));
-      }
-      
-      &:hover {
         svg {
-          animation: slideRight 1s infinite alternate ease;
+          width: max(25px, px2vw(30));
+          height: max(25px, px2vw(30));
+          max-width: 30px;
+          max-height: 30px;
+          will-change: transform;
+          transition: transform 0.3s ease;
         }
       }
-
-      &:focus {
-        svg {
-          animation: slideRight 1s infinite alternate ease;
-        }
-      }
-    }
-
-    input, textarea {
-      border: 1px solid #bcbcbc;
-      border-radius: 5px;
-      font-size: px2rem(16);
-      padding: 0 24px;
-
-      &::placeholder {
-        font-size: px2rem(14);
-        color: #999;
-      }
-    }
-
-    div {
-      display: flex;
-      justify-content: space-between;
-      flex: 1;
-
-      & > div:nth-child(2) {
-        margin-left: px2rem(16);
-      }
-
-      label {
-        color: #333;
-        font-size: px2rem(14);
-        margin-bottom: 5px;
-      }
-
-      input {
-        height: 50px;
-        // width: 360px;
-        width: 100%;
-        margin-bottom: 32px;
-      }
-    }
-
-    textarea {
-      width: 100%;
-      height: 177px;
-      padding-top: 20px;
-      line-height: 1.25;
     }
   }
 
@@ -300,6 +291,7 @@
   .main {
     flex-direction: row;
     margin: 100px px2vw(32);
+    justify-content: space-between;
 
     .links {
       flex-wrap: nowrap;
